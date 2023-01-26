@@ -34,7 +34,7 @@ function empty() {
    basket = [];
 }
 
-empty();
+//empty();
 console.log (basket);
 
 
@@ -47,3 +47,12 @@ function isFull() {
     }
 }
 
+function removeItem(item) {
+    let i = basket.indexOf ( item );
+    if (item === basket[i]) {
+      basket.splice( basket[i]);
+   }
+}
+
+removeItem ('chips');
+console.log(basket);
