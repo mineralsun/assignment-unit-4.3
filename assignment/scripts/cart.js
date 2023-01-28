@@ -47,12 +47,18 @@ function isFull() {
     }
 }
 
-function removeItem(item) {
-    let i = basket.indexOf ( item );
-    if (item === basket[i]) {
-      basket.splice( basket[i]);
-   }
+
+function removeItem( item ) {
+    let index = basket.indexOf( item );
+    if ( index !== -1 ) {
+        basket.splice( index, 1 );
+        return `${item} was removed`
+    } else {
+        return `null`
+    }
 }
 
-removeItem ('chips');
-console.log(basket);
+
+console.log( removeItem( 'cookies') );
+console.log( removeItem( 'chips') );
+console.log( basket );
