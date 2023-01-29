@@ -34,7 +34,7 @@ function empty() {
    basket = [];
 }
 
-//empty();
+
 console.log (basket);
 
 
@@ -62,3 +62,8 @@ function removeItem( item ) {
 console.log( removeItem( 'cookies') );
 console.log( removeItem( 'chips') );
 console.log( basket );
+
+listItems();
+
+empty();
+console.log(basket);
